@@ -17,7 +17,7 @@ desktops. It uses Puppet modules from
 ## Usage
 
     puppet apply /path/to/puppet-desktop/manifests/site.pp \
-      --modulepath=/path/to/puppet-modules
+      --modulepath=/path/to/puppet-modules:/path/to/puppet-desktop/services
 
 ## Support
 
