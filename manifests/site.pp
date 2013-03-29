@@ -1,4 +1,3 @@
 node default {
-  include logwatch
-  include ntp
+  include "s_desktop"
 }
