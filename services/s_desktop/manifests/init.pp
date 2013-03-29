@@ -1,4 +1,5 @@
 class s_desktop {
-  include logwatch
-  include ntp
+  include "debian"
+  include "logwatch"
+  include "ntp"
 }
