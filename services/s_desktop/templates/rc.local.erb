@@ -1,0 +1,7 @@
+#!/bin/sh -e
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+
+exit 0
