@@ -5,6 +5,7 @@ class s_desktop {
   include "logwatch"
   include "ntp"
   include "rkhunter"
+  include "ssh::client"
 
   package { "bsd-mailx": 
     ensure => installed
@@ -17,5 +18,4 @@ class s_desktop {
   }
 
   iptables::module { "resolvers": }
-  iptables::module { "ssh": }
 }
