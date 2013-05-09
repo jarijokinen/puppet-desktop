@@ -1,5 +1,6 @@
 class s_desktop {
   include "chkrootkit"
+  include "iptables"
   include "logcheck"
   include "logwatch"
   include "ntp"
@@ -14,4 +15,6 @@ class s_desktop {
     content => template("s_desktop/rc.local.erb"),
     mode    => "0700"
   }
+
+  iptables::module { "resolvers": }
 }
