@@ -17,4 +17,5 @@ class s_desktop {
   }
 
   iptables::module { "resolvers": }
+  iptables::module { "ssh": }
 }
