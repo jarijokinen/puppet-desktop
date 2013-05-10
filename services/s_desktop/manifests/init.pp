@@ -20,6 +20,7 @@ class s_desktop {
   # Utils
   include "msmtp"
   include "mutt"
+  include "screen"
   include "vim"
 
   # X11
