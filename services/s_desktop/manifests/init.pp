@@ -2,6 +2,7 @@ class s_desktop {
   include "chkrootkit"
   include "grsecurity"
   include "iptables"
+  include "kernel::package"
   include "locales"
   include "logcheck"
   include "logwatch"
