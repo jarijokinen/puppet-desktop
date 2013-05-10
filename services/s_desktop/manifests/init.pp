@@ -4,6 +4,7 @@ class s_desktop {
   include "logcheck"
   include "logwatch"
   include "ntp"
+  include "postfix"
   include "rkhunter"
   include "ssh::client"
 
