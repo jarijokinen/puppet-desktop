@@ -13,10 +13,16 @@ class s_desktop {
   include "timezone"
 
   package { "avahi-daemon": 
-    ensure => absent
+    ensure => purged
   }
   package { "bsd-mailx": 
     ensure => installed
+  }
+  package { "tasksel": 
+    ensure => purged
+  }
+  package { "tasksel-data": 
+    ensure => purged
   }
 
   file { "/etc/rc.local":
