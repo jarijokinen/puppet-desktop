@@ -1,6 +1,7 @@
 class s_desktop {
   include "chkrootkit"
   include "iptables"
+  include "locales"
   include "logcheck"
   include "logwatch"
   include "ntp"
