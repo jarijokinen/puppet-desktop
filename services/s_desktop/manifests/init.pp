@@ -18,6 +18,7 @@ class s_desktop {
   include "kernel::development"
 
   # Utils
+  include "msmtp"
   include "mutt"
   include "vim"
 
