@@ -2,6 +2,8 @@ class s_desktop {
   include "chkrootkit"
   include "grsecurity"
   include "iptables"
+  include "libreoffice::calc"
+  include "libreoffice::writer"
   include "locales"
   include "logcheck"
   include "logwatch"
