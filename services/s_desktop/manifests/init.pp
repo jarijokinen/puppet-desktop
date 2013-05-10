@@ -2,8 +2,6 @@ class s_desktop {
   include "chkrootkit"
   include "grsecurity"
   include "iptables"
-  include "libreoffice::calc"
-  include "libreoffice::writer"
   include "locales"
   include "logcheck"
   include "logwatch"
@@ -15,6 +13,13 @@ class s_desktop {
   include "tcpd"
   include "timezone"
   include "vim"
+  
+  # X11
+  include "evince"
+  include "geeqie"
+  include "gimp"
+  include "libreoffice::calc"
+  include "libreoffice::writer"
 
   package { "avahi-daemon": 
     ensure => purged
