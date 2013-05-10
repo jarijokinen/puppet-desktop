@@ -24,9 +24,11 @@ class s_desktop {
   include "vim"
 
   # X11
+  include "chromium"
   include "evince"
   include "geeqie"
   include "gimp"
+  include "iceweasel"
   include "libreoffice::calc"
   include "libreoffice::writer"
 
