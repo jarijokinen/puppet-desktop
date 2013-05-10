@@ -11,6 +11,9 @@ class s_desktop {
   include "tcpd"
   include "timezone"
 
+  package { "avahi-daemon": 
+    ensure => absent
+  }
   package { "bsd-mailx": 
     ensure => installed
   }
