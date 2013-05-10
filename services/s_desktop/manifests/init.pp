@@ -1,4 +1,5 @@
 class s_desktop {
+  include "build"
   include "chkrootkit"
   include "grsecurity"
   include "iptables"
