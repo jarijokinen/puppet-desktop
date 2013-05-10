@@ -7,12 +7,14 @@ class s_desktop {
   include "locales"
   include "logcheck"
   include "logwatch"
+  include "mutt"
   include "ntp"
   include "postfix"
   include "rkhunter"
   include "ssh::client"
   include "tcpd"
   include "timezone"
+  include "vim"
 
   package { "avahi-daemon": 
     ensure => purged
