@@ -8,6 +8,7 @@ class s_desktop {
   include "postfix"
   include "rkhunter"
   include "ssh::client"
+  include "timezone"
 
   package { "bsd-mailx": 
     ensure => installed
