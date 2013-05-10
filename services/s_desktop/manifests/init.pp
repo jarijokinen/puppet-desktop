@@ -1,21 +1,26 @@
 class s_desktop {
-  include "build"
+  # Base
   include "chkrootkit"
   include "grsecurity"
   include "iptables"
-  include "kernel::package"
   include "locales"
   include "logcheck"
   include "logwatch"
-  include "mutt"
   include "ntp"
   include "postfix"
   include "rkhunter"
   include "ssh::client"
   include "tcpd"
   include "timezone"
-  include "vim"
   
+  # Development
+  include "build"
+  include "kernel::development"
+
+  # Utils
+  include "mutt"
+  include "vim"
+
   # X11
   include "evince"
   include "geeqie"
