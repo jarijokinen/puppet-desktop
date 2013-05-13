@@ -1,5 +1,6 @@
 class s_desktop {
   # Base
+  include "apt"
   include "chkrootkit"
   include "grsecurity"
   include "iptables"
@@ -31,6 +32,7 @@ class s_desktop {
   include "iceweasel"
   include "libreoffice::calc"
   include "libreoffice::writer"
+  include "spotify"
 
   package { "avahi-daemon": 
     ensure => purged
