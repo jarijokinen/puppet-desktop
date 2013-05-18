@@ -53,5 +53,6 @@ class s_desktop {
     mode    => "0700"
   }
 
+  iptables::module { "ntp": }
   iptables::module { "resolvers": }
 }
