@@ -3,6 +3,7 @@ class s_desktop {
   include "apt"
   include "chkrootkit"
   include "grsecurity"
+  include "grub"
   include "iptables"
   include "locales"
   include "logcheck"
