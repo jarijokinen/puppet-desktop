@@ -9,6 +9,7 @@ class s_desktop {
   include "logwatch"
   include "ntp"
   include "postfix"
+  include "puppet"
   include "rkhunter"
   include "ssh::client"
   include "tcpd"
