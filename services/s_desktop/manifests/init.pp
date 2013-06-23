@@ -30,6 +30,7 @@ class s_desktop {
   # X11
   include "xfce4"
   include "xdm"
+  include "xorg"
 
   # X11 utils
   #include "chromium"
