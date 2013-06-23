@@ -13,6 +13,7 @@ class s_desktop {
   include "puppet"
   include "rkhunter"
   include "ssh::client"
+  include "sudo"
   include "tcpd"
   include "timezone"
   
@@ -34,7 +35,7 @@ class s_desktop {
   #include "evince"
   #include "geeqie"
   #include "gimp"
-  #include "iceweasel"
+  include "iceweasel"
   #include "libreoffice::calc"
   #include "libreoffice::writer"
   #include "spotify"
@@ -44,9 +45,6 @@ class s_desktop {
   }
   package { "bsd-mailx": 
     ensure => installed
-  }
-  package { "dictionaries-common": 
-    ensure => purged
   }
   package { "iamerican": 
     ensure => purged
