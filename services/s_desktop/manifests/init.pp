@@ -2,9 +2,9 @@ class s_desktop {
   # Base
   include "apt"
   include "chkrootkit"
-  include "grsecurity"
+  #include "grsecurity"
   include "grub"
-  include "iptables"
+  #include "iptables"
   include "locales"
   include "logcheck"
   include "logwatch"
@@ -26,14 +26,18 @@ class s_desktop {
   include "vim"
 
   # X11
-  include "chromium"
-  include "evince"
-  include "geeqie"
-  include "gimp"
-  include "iceweasel"
-  include "libreoffice::calc"
-  include "libreoffice::writer"
-  include "spotify"
+  include "xfce4"
+  include "xdm"
+
+  # X11 utils
+  #include "chromium"
+  #include "evince"
+  #include "geeqie"
+  #include "gimp"
+  #include "iceweasel"
+  #include "libreoffice::calc"
+  #include "libreoffice::writer"
+  #include "spotify"
 
   package { "avahi-daemon": 
     ensure => purged
@@ -48,12 +52,12 @@ class s_desktop {
     ensure => purged
   }
 
-  file { "/etc/rc.local":
-    ensure  => present,
-    content => template("s_desktop/rc.local.erb"),
-    mode    => "0700"
-  }
+  #file { "/etc/rc.local":
+  #  ensure  => present,
+  #  content => template("s_desktop/rc.local.erb"),
+  #  mode    => "0700"
+  #}
 
-  iptables::module { "ntp": }
-  iptables::module { "resolvers": }
+  #iptables::module { "ntp": }
+  #iptables::module { "resolvers": }
 }
