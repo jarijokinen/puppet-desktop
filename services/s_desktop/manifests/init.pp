@@ -45,10 +45,37 @@ class s_desktop {
   package { "bsd-mailx": 
     ensure => installed
   }
+  package { "dictionaries-common": 
+    ensure => purged
+  }
+  package { "iamerican": 
+    ensure => purged
+  }
+  package { "ibritish": 
+    ensure => purged
+  }
+  package { "ienglish-common": 
+    ensure => purged
+  }
+  package { "ispell": 
+    ensure => purged
+  }
+  package { "laptop-detect": 
+    ensure => purged
+  }
+  package { "os-prober": 
+    ensure => purged
+  }
+  package { "task-english": 
+    ensure => purged
+  }
   package { "tasksel": 
     ensure => purged
   }
   package { "tasksel-data": 
+    ensure => purged
+  }
+  package { "wamerican": 
     ensure => purged
   }
 
