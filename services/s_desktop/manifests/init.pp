@@ -11,6 +11,7 @@ class s_desktop {
   include "ntp"
   include "postfix"
   include "puppet"
+  include "pwsafe"
   include "rkhunter"
   include "ssh::client"
   include "sudo"
