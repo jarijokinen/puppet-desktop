@@ -33,13 +33,13 @@ class s_desktop {
   include "xorg"
 
   # X11 utils
-  #include "chromium"
-  #include "evince"
-  #include "geeqie"
-  #include "gimp"
+  include "chromium"
+  include "evince"
+  include "geeqie"
+  include "gimp"
   include "iceweasel"
-  #include "libreoffice::calc"
-  #include "libreoffice::writer"
+  include "libreoffice::calc"
+  include "libreoffice::writer"
   #include "spotify"
 
   package { "avahi-daemon": 
